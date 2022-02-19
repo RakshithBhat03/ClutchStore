@@ -1,0 +1,18 @@
+.navigation-wrapper {
+  position: sticky;
+  top: var(--size-0);
+  z-index: 1000;
+  background-color: var(--primary-color-dark);
+}
+
+/* Badge overwrite */
+
+.badge--sm {
+  font-size: var(--size-6);
+  height: var(--size-10);
+  width: var(--size-10);
+}
+
+.badge-icon .badge--top-right {
+  transform: translate(50%, -40%);
+}
