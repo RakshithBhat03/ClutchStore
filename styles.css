@@ -1,0 +1,90 @@
+@import url("css/footer.css");
+@import url("css/nav.css");
+
+.wrapper {
+  background-color: var(--color-extra-light-gray);
+}
+
+/* Hero Section */
+
+.hero-wrapper {
+  height: 75vh;
+  filter: opacity(85%);
+  padding: var(--size-9);
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("./assets/hero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Hero text overlay */
+
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: var(--color-white);
+}
+
+.hero-title {
+  max-width: 50ch;
+}
+
+.hero-text > span {
+  padding-inline: var(--size-5);
+}
+
+.hero-btn {
+  padding-inline: var(--size-5);
+}
+
+.hero-btn button {
+  border-color: var(--color-white);
+  border-radius: var(--size-0);
+}
+
+/* Showcase section */
+
+.collection-list {
+  transition: all 0.3s linear;
+}
+
+.collection {
+  width: calc(30 * var(--size-9));
+  height: calc(30 * var(--size-9));
+  overflow: hidden;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--radius-md);
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.collection img {
+  height: 100%;
+}
+
+.collection:hover {
+  transform: translate(0, -3%);
+}
+
+.main-collection h2,
+.main-popular h2 {
+  color: var(--primary-color-dark);
+}
+
+@media screen and (max-width: 550px) {
+  .collection {
+    height: calc(20 * var(--size-9));
+    width: calc(20 * var(--size-9));
+  }
+
+  .hero-title h1 {
+    font-size: var(--size-15);
+  }
+}
