@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://clutchui.netlify.app/stylesheets/index.css" />
+    <link rel="stylesheet"
+        href="../css/cart.css" />
+    <title>ClutchStore | Cart</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="navigation-wrapper">
+            <div class="navigation max-width-1200 mx-auto">
+                <div class="navigation__title">
+                    <a href="/"><i class="fas fa-basketball-ball"></i><span>ClutchStore</span></a>
+                </div>
+                <div class="navigation__search">
+                    <div class="navigation__search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text"
+                        class="input-field input--lg input--round" />
+                </div>
+                <div class="navigation__login">
+                    <a href="./signout.html"><button class="btn btn--primary btn--md btn--outline px-12"> Logout
+                        </button></a>
+                </div>
+                <div class="navigation__hamburger">
+                    <button class="btn btn--md btn--icon btn--outline">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu-list">
+                        <li>
+                            <a href="./wishlist.html"><button class="btn btn--md btn--icon btn--outline">
+                                    <div class="badge-icon badge-icon--sm">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="badge badge--sm badge--top-right">5</span>
+                                    </div>
+                                </button></a>
+                        </li>
+                        <li>
+                            <a href="./cart.html"><button class="btn btn--md btn--icon btn--outline">
+                                    <div class="badge-icon badge-icon--sm">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="badge badge--sm badge--top-right">3</span>
+                                    </div>
+                                </button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main min-75-vh width-100 display-flex justify-content-center align-items-center">
+            <main class="width-100">
+                <div class="cart-wrapper display-grid mx-auto my-15 width-80 gap-1">
+                    <section class="product-cart display-flex flex-col justify-content-start gap-1 p-11">
+                        <div class="section-heading txt-bold txt-left py-5 px-8 width-30"><span>Your Cart</span>
+                        </div>
+                        <div class="card card--horizontal card--box-shadow card--border-md width-100 mx-auto">
+                            <div class="card__img">
+                                <img src="../assets/Hoodie/Hoodie-lakers.png"
+                                    alt=""
+                                    class="img--responsive" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Lakers Hoodie Official-2020</h4>
+                                <small class="card__text-info">NBA <i class="fas fa-check"></i></small>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹15,999</span>
+                                    <span class="card__price--strike">₹19,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__quantity display-flex align-items-center mb-7">
+                                    <p class="txt-md txt-semibold txt-center">Quantity</>
+                                        <button type="button"
+                                            class="btn btn--md"><i class="fas fa-minus"></i></button>
+                                        <input type="number"
+                                            name="quantity"
+                                            value="1"
+                                            class="p-3">
+                                        <button type="button"
+                                            class="btn btn--md"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline"> Move to wishlist <button
+                                                class="btn btn--md btn--danger btn--outline btn--icon">
+                                                <i class="fas fa-trash-alt"></i>Remove from cart </button>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card--horizontal card--box-shadow card--border-md width-100 mx-auto">
+                            <div class="card__img">
+                                <img src="../assets/Cap/Cap-cavs.png"
+                                    alt=""
+                                    class="img--responsive" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Cleveland Cavaliers-Cap</h4>
+                                <small class="card__text-info">NBA <i class="fas fa-check"></i></small>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹5,999</span>
+                                    <span class="card__price--strike">₹7,999</span>
+                                    <span class="card__price--discount">20% off</span>
+                                </div>
+                                <div class="card__quantity display-flex align-items-center mb-7">
+                                    <p class="txt-md txt-semibold txt-center">Quantity</>
+                                        <button type="button"
+                                            class="btn btn--md"><i class="fas fa-minus"></i></button>
+                                        <input type="number"
+                                            name="quantity"
+                                            value="1"
+                                            class="p-3">
+                                        <button type="button"
+                                            class="btn btn--md"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline"> Move to wishlist <button
+                                                class="btn btn--md btn--danger btn--outline btn--icon">
+                                                <i class="fas fa-trash-alt"></i>Remove from cart </button>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card--horizontal card--box-shadow card--border-md width-100 mx-auto">
+                            <div class="card__img">
+                                <img src="../assets/Sneakers/Air-jordan-1.png"
+                                    alt=""
+                                    class="img--responsive" />
+                            </div>
+                            <div class="card__body">
+                                <h4 class="card__title">Air Jordan I Classic</h4>
+                                <small class="card__text-info">Nike <i class="fas fa-check"></i></small>
+                                <div class="card__price">
+                                    <span class="card__price--mrp">₹49,999</span>
+                                    <span class="card__price--strike">₹52,999</span>
+                                    <span class="card__price--discount">5% off</span>
+                                </div>
+                                <div class="card__quantity display-flex align-items-center mb-7">
+                                    <p class="txt-md txt-semibold txt-center">Quantity</>
+                                        <button type="button"
+                                            class="btn btn--md"><i class="fas fa-minus"></i></button>
+                                        <input type="number"
+                                            name="quantity"
+                                            value="1"
+                                            class="p-3">
+                                        <button type="button"
+                                            class="btn btn--md"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="card__link">
+                                    <div class="card__link--btn">
+                                        <button class="btn btn--md btn--primary btn--outline"> Move to wishlist <button
+                                                class="btn btn--md btn--danger btn--outline btn--icon">
+                                                <i class="fas fa-trash-alt"></i>Remove from cart </button>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="product-coupon display-flex flex-col justify-content-center gap-1 p-11">
+                        <div class="section-heading txt-bold txt-left py-5 px-8"><span>Apply Coupon</span>
+                        </div>
+                        <p class="coupon-info txt-reg">If you have a coupon code, please enter in the box below.</p>
+                        <input type="text"
+                            class="coupon-input input-feild input--primary input--md input--round px-7 width-90 mx-auto"
+                            placeholder="Apply coupon">
+                        <button type="button"
+                            class="btn btn--primary btn--md txt-white width-30 mx-auto">Apply</button>
+                        <div class="section-heading txt-bold txt-left py-5 px-8"><span>Instructions for seller</span>
+                        </div>
+                        <textarea class="text-area p-5 txt-reg width-90 mx-auto"
+                            placeholder="- Bill required"></textarea>
+                    </section>
+                    <section class="product-summary display-flex flex-col justify-content-center gap-1 p-11">
+                        <div class="section-heading txt-bold txt-left py-5 px-8"><span>Order Summary</span>
+                        </div>
+                        <p class="summary-info txt-reg txt-light">Order summary below. Prices are calculated by vendors.
+                        </p>
+                        <div class="product-total-wrapper display-flex flex-col justify-content-center gap-1">
+                            <div class="product-subtotal display-flex align-items-center justify-content-between">
+                                <p class="txt-medium">Order Subtotal</p>
+                                <span class="product-price txt-semibold">₹71,997</span>
+                            </div>
+                            <hr>
+                            <div class="product-shipping display-flex align-items-center justify-content-between">
+                                <p>Shipping and handling</p>
+                                <span class="product-price txt-semibold">₹999</span>
+                            </div>
+                            <hr>
+                            <div class="product-tax display-flex align-items-center justify-content-between">
+                                <p>Tax</p>
+                                <span class="product-price txt-semibold">₹550</span>
+                            </div>
+                            <hr>
+                            <div class="product-total display-flex align-items-center justify-content-between">
+                                <p>Total</p>
+                                <span class="product-price txt-bold">₹73,546</span>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="width-30 mx-auto"><button type="button"
+                                class="btn btn--primary btn--md width-100 mx-auto txt-white display-flex justify-content-center"><span>Checkout</span></button></a>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div class="footer py-16 px-5">
+            <footer class="display-grid">
+                <div class="footer-additional">
+                    <div class="footer-info txt-md">Quick Links</div>
+                    <ul class="display-flex flex-col justify-content-center">
+                        <li class="py-5 px-3"><a href="../"
+                                class="btn btn--link txt-reg">Home</a></li>
+                        <li class="py-5 px-3"><a href="../pages/products.html"
+                                class="btn btn--link txt-reg">Products</a></li>
+                        <li class="py-5 px-3"><a href="../pages/cart.html"
+                                class="btn btn--link txt-reg">Cart</a></li>
+                        <li class="py-5 px-3"><a href="../pages/wishlist.html"
+                                class="btn btn--link txt-reg">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-info txt-md">Socials</div>
+                    <ul class="footer-link display-flex align-items-center justify-content-start">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/RakshithBhat03/"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/rakshithbhat/"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://twitter.com/RakshithBhat1"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="footer-text txt-md">Made with &hearts; by Rakshith Bhat</div>
+                    <div class="footer-copyright"> &copy; ClutchStore, 2022 All rights reserved. </div>
+                </div>
+                <div class="footer-additional">
+                    <div class="footer-info txt-md">Contact</div>
+                    <ul class="display-flex flex-col justify-content-center align-items-center">
+                        <li class="py-5 px-3"><a href="#"
+                                class="txt-reg">Phone no: 4815162342</a></li>
+                        <li class="py-5 px-3"><a href="#"
+                                class="txt-reg"><i class="fas fa-envelope"></i> contactme@clutchstore.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
