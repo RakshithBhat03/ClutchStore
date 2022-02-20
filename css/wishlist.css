@@ -1,0 +1,40 @@
+@import url(./nav.css);
+@import url(./footer.css);
+
+.wrapper {
+  background-color: var(--color-extra-light-gray);
+}
+
+/* wishlist */
+
+.wishlist-wrapper {
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--color-white);
+}
+
+.wishlist-heading h1 {
+  color: var(--primary-color-dark);
+  margin-block: var(--size-5);
+}
+
+/* Wishlist card container */
+
+.wishlist-card {
+  min-width: calc(28 * var(--size-9));
+}
+
+.wishlist-product {
+  justify-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .card--horizontal {
+    flex-direction: column;
+  }
+  .wishlist-card {
+    min-width: calc(18 * var(--size-9));
+  }
+  .card__body {
+    max-width: 100%;
+  }
+}
