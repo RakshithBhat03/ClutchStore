@@ -1,0 +1,5 @@
+@import url(./auth.css);
+
+.auth-wrapper {
+  width: calc(25 * var(--size-9));
+}
