@@ -50,15 +50,6 @@
   font-size: var(--size-10);
   line-height: 1.2;
 }
-/* Filters */
-
-.category-link {
-  font-size: calc(1.15 * var(--size-9));
-  color: var(--primary-color);
-}
-.category-link:hover {
-  color: var(--primary-color-dark);
-}
 
 @media screen and (max-width: 900px) {
   .products-wrapper {
