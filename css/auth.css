@@ -15,7 +15,7 @@
   color: var(--primary-color-dark);
 }
 
-.auth-wrapper button:not(.auth-social) {
+.auth-wrapper button:not(.auth-social, .password-icon) {
   color: var(--text-white);
 }
 
