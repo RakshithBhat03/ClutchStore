@@ -72,21 +72,35 @@
                     </div>
                     <div class="auth-form">
                         <form class="form display-flex flex-col justify-content-center gap-1">
-                            <input type="text"
-                                class="input-field input--md "
-                                placeholder="Full Name">
+                            <div class="form-name display-flex gap-1"><input type="text"
+                                    class="input-field input--md "
+                                    placeholder="First Name">
+                                <input type="text"
+                                    class="input-field input--md "
+                                    placeholder="Last Name">
+                            </div>
                             <input type="email"
                                 class="input-field input--md "
                                 placeholder="Email">
                             <input type="text"
                                 class="input-field input--md "
                                 placeholder="Username">
-                            <input type="password"
-                                class="input-field input--md "
-                                placeholder="Password">
-                            <input type="password"
-                                class="input-field input--md "
-                                placeholder="Confirm password">
+                            <div class="form-password display-flex gap-1">
+                                <div class="password-icon-wrapper position-relative">
+                                    <input type="password"
+                                        class="input-field input--md pr-16"
+                                        placeholder="Password">
+                                    <button class="btn password-icon txt-reg position-absolute"><i
+                                            class="fas fa-eye-slash"></i></button>
+                                </div>
+                                <div class="password-icon-wrapper position-relative">
+                                    <input type="password"
+                                        class="input-field input--md pr-16"
+                                        placeholder="Confirm Password">
+                                    <button class="btn password-icon txt-reg position-absolute"><i
+                                            class="fas fa-eye-slash"></i></button>
+                                </div>
+                            </div>
                             <div class="auth-checkbox">
                                 <input type="checkbox"
                                     class="mr-5">Agree to terms and conditions </div>
